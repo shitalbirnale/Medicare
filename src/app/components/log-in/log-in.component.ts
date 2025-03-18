@@ -29,7 +29,7 @@ export class LogInComponent {
           console.error('Error fetching users', error);
           this.errorMessage = error.error.text;
           this.isFailure = true;
-        })
+        });
       }
       }
 

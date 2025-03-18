@@ -1,1 +1,29 @@
-<p>patient-list works!</p>
+<div class="container">
+    <h2>Patient Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let patient of patients">
+          <td>{{ patient.name }}</td>
+          <td>{{ patient.age }}</td>
+          <td>{{ patient.phoneNo }}</td>
+          <td>{{ patient.emailAddress }}</td>
+          <td>{{ patient.address }}</td>
+          <td>
+            <button class="edit-btn" (click)="editPatient(patient.patientId)">Edit</button>
+            <button class="delete-btn" (click)="deletePatient(patient.patientId)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

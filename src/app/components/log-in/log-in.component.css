@@ -85,13 +85,13 @@ button {
   margin-top: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #277ad2;
   color: white;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #2077d3;
 }
 
 /* Animation */
